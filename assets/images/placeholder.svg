@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a231e" />
+      <stop offset="100%" stop-color="#14100e" />
+    </linearGradient>
+    
+    <!-- Accent Orange Glow -->
+    <radialGradient id="orangeGlow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#E8622A" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#E8622A" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Gold/Orange Stroke Gradient -->
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F39C12" />
+      <stop offset="50%" stop-color="#E8622A" />
+      <stop offset="100%" stop-color="#D35400" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rectangular Background with Subtle Cozy Inner Shadow Feel -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="16" />
+  
+  <!-- Subtle Ambient Glow -->
+  <circle cx="200" cy="150" r="130" fill="url(#orangeGlow)" />
+  
+  <!-- Outer Dotted Circle for Aesthetic Premium Blueprint Feel -->
+  <circle cx="200" cy="150" r="110" fill="none" stroke="#E8622A" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="6,4" />
+
+  <!-- Coffee Cup Steaming Icon Group -->
+  <g transform="translate(135, 75)">
+    <!-- Steam Lines (Micro-animations can target these if needed) -->
+    <path d="M45, -15 Q35, -5 45, 5 T45, 25" fill="none" stroke="#F4EFF6" stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M65, -20 Q55, -8 65, 4 T65, 26" fill="none" stroke="#E8622A" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" />
+    <path d="M85, -13 Q75, -3 85, 7 T85, 23" fill="none" stroke="#F4EFF6" stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Cup Body -->
+    <path d="M15,35 L115,35 C112,85 18,85 15,35 Z" fill="#251E1A" stroke="url(#strokeGrad)" stroke-width="4.5" stroke-linejoin="round" />
+    
+    <!-- Cup Sleeve Accent -->
+    <path d="M22,45 L108,45 C106,63 24,63 22,45 Z" fill="#E8622A" fill-opacity="0.1" stroke="#E8622A" stroke-width="1.5" stroke-opacity="0.25" />
+
+    <!-- Cup Handle -->
+    <path d="M114,43 C128,43 133,63 113,67" fill="none" stroke="url(#strokeGrad)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Saucer / Plate -->
+    <path d="M0,90 C0,90 20,102 65,102 C110,102 130,90 130,90 L120,86 L10,86 Z" fill="#1C1714" stroke="url(#strokeGrad)" stroke-width="4.5" stroke-linejoin="round" fill-opacity="0.8" />
+  </g>
+
+  <!-- Premium Typography text -->
+  <text x="200" y="235" font-family="'Inter', 'Montserrat', 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#F4EFF6" fill-opacity="0.8" text-anchor="middle" letter-spacing="3">
+    WARKOP MAWAR
+  </text>
+  
+  <text x="200" y="255" font-family="'Inter', 'Montserrat', 'Segoe UI', sans-serif" font-size="11" font-weight="500" fill="#E8622A" fill-opacity="0.6" text-anchor="middle" letter-spacing="1">
+    Seduhan Terbaik Untuk Anda
+  </text>
+</svg>

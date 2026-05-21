@@ -1,0 +1,171 @@
+════════════════════════════════════════════════════════════════════════════════
+    PANDUAN UPLOAD & KUSTOMISASI — TEMPLATE MAWAR COFFEE SHOP
+    Versi Statis (HTML/CSS/JS Murni)
+════════════════════════════════════════════════════════════════════════════════
+
+
+📋 STRUKTUR FILE
+════════════════════════════════════════════════════════════════════════════════
+
+mawar-statis/
+├── index.html                          ← File utama website
+├── CARA_UPLOAD.txt                     ← File ini (panduan)
+├── README.md                           ← Deskripsi singkat
+│
+├── js/
+│   └── config.js                       ← ⭐ EDIT HANYA FILE INI untuk kustomisasi
+│
+└── assets/
+    ├── css/
+    │   └── style.css                   ← Stylesheet utama
+    ├── js/
+    │   └── main.js                     ← JavaScript (jangan diubah)
+    └── images/                         ← Semua gambar & favicon
+
+
+⭐ CARA KUSTOMISASI (HANYA 1 FILE!)
+════════════════════════════════════════════════════════════════════════════════
+
+Buka file:  js/config.js
+Edit nilai-nilai berikut, lalu simpan (Ctrl+S) dan refresh browser:
+
+  ┌─────────────────────────────────────────────────────────────┐
+  │  Yang bisa diubah di config.js:                            │
+  │                                                             │
+  │  🏪 Identitas     → storeName, tagline, shortDescription   │
+  │  📍 Lokasi        → locationCity, locationProvince          │
+  │  📅 Operasional   → establishedYear, openingHours           │
+  │  📞 Kontak        → whatsappNumber                          │
+  │  🗺️ Peta          → mapCoordinates (lat/lng), mapZoom       │
+  │  🔗 Sosial        → instagramLink, tiktokLink               │
+  │  🚗 Pesan Online  → grabFoodLink, shopeeFoodLink            │
+  │  📊 Statistik     → totalMenuItems, priceStartingFrom       │
+  │  🔍 SEO           → metaTitle, metaDescription, metaKeywords│
+  │  👤 Kredit        → ownerName, templateCreatorName          │
+  └─────────────────────────────────────────────────────────────┘
+
+CATATAN:
+  • Jangan hapus tanda koma (,) di akhir setiap baris nilai
+  • Jangan hapus tanda kurung kurawal { } atau [ ]
+  • Isi field dengan "" (string kosong) jika ingin menonaktifkan link sosmed
+
+
+✅ CHECKLIST SEBELUM UPLOAD
+════════════════════════════════════════════════════════════════════════════════
+
+ ☐ js/config.js — sudah diisi dengan data toko yang benar
+ ☐ index.html   — tidak perlu diubah
+ ☐ assets/css/style.css  — ada
+ ☐ assets/js/main.js     — ada
+ ☐ assets/images/        — semua gambar ter-upload lengkap (61+ file)
+
+ Verifikasi konten di browser sebelum upload:
+ ☐ Nama toko muncul benar di header, loader, dan footer
+ ☐ Nomor WhatsApp benar (coba klik "Pesan Sekarang")
+ ☐ Tombol GrabFood & ShopeeFood mengarah ke toko yang benar
+ ☐ Peta menunjukkan lokasi yang tepat
+ ☐ Tab browser menampilkan judul yang benar (dari metaTitle)
+
+
+📤 CARA UPLOAD
+════════════════════════════════════════════════════════════════════════════════
+
+CARA 1 — via FTP / cPanel File Manager:
+  1. Buka cPanel → File Manager → public_html
+  2. Upload seluruh folder dengan struktur yang sama
+  3. Pastikan js/config.js juga ter-upload
+  4. Akses: https://domain.com/index.html
+
+CARA 2 — via GitHub Pages / Netlify / Vercel (GRATIS):
+  1. Buat repository baru di GitHub
+  2. Upload semua file ke repository
+  3. Aktifkan GitHub Pages (Settings → Pages → Deploy from branch)
+  4. Akses: https://username.github.io/nama-repo
+
+CARA 3 — via Git CLI:
+  git add .
+  git commit -m "Setup template Mawar Coffee Shop"
+  git push origin main
+  → Deploy otomatis jika sudah terhubung ke Netlify/Vercel
+
+
+🌐 AKSES LOKAL (Testing)
+════════════════════════════════════════════════════════════════════════════════
+
+Buka langsung di browser:
+  file:///C:/path/ke/folder/mawar-statis/index.html
+
+Atau gunakan Live Server (VS Code Extension) untuk pengalaman lebih baik:
+  1. Install ekstensi "Live Server" di VS Code
+  2. Klik kanan index.html → "Open with Live Server"
+
+
+⚙️ FITUR YANG BERFUNGSI
+════════════════════════════════════════════════════════════════════════════════
+
+✅ Berfungsi di Versi Statis ini:
+   • Kustomisasi penuh via js/config.js (tanpa sentuh HTML)
+   • Navigation anchor & responsive mobile menu
+   • Hero section dengan video carousel (6 video)
+   • Eco screensaver otomatis saat idle 3 menit
+   • Menu display dengan tab Minuman & Makanan + toggle Hot/Ice
+   • Keranjang belanja (cart) + order via WhatsApp
+   • Tombol GrabFood & ShopeeFood floating
+   • Gallery dengan lightbox zoom
+   • Peta interaktif Leaflet (koordinat dari config.js)
+   • Dark mode toggle
+   • Terjemahan EN/ID (Google Translate)
+   • Animasi scroll reveal & custom cursor
+   • SEO meta tags (dari config.js)
+
+❌ Membutuhkan Backend (tidak tersedia di versi ini):
+   • Simpan reservasi ke database
+   • Upload foto via admin panel
+   • Ubah menu secara real-time
+
+
+📞 BANTUAN & TROUBLESHOOTING
+════════════════════════════════════════════════════════════════════════════════
+
+Masalah: Nama toko tidak berubah setelah edit config.js
+Solusi:
+   • Pastikan file config.js ter-simpan (Ctrl+S)
+   • Hard refresh browser: Ctrl+Shift+R
+   • Pastikan tidak ada syntax error (buka F12 → Console)
+
+Masalah: Gambar tidak muncul
+Solusi:
+   • Pastikan folder assets/images/ ter-upload lengkap
+   • Periksa console browser (F12 → Console)
+
+Masalah: Peta tidak muncul / lokasi salah
+Solusi:
+   • Cek nilai lat dan lng di CONFIG.mapCoordinates
+   • Pastikan koneksi internet aktif (peta dari OpenStreetMap CDN)
+
+Masalah: WhatsApp tidak terbuka atau salah nomor
+Solusi:
+   • Periksa CONFIG.whatsappNumber — pastikan format: "628xxxx" (tanpa +)
+
+Masalah: Video hero tidak play
+Solusi:
+   • Video dihosting di Google Drive — pastikan link masih aktif
+   • Coba di browser Chrome/Firefox versi terbaru
+
+
+📊 UKURAN FILE
+════════════════════════════════════════════════════════════════════════════════
+
+  index.html     ~62 KB
+  style.css      ~150 KB
+  main.js        ~30 KB
+  config.js      ~6 KB
+  images/        ~10–50 MB (tergantung resolusi)
+
+
+════════════════════════════════════════════════════════════════════════════════
+  Template: Mawar Coffee Shop — Versi Statis
+  Dibuat oleh: Satria Nanda Tama
+  Portofolio : https://karyakarsa.com/satriatama
+  Update     : Mei 2026
+════════════════════════════════════════════════════════════════════════════════
