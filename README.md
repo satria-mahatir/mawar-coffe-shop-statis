@@ -117,14 +117,16 @@ Double-click file `index.html` untuk membukanya secara langsung di browser Anda,
 
 ---
 
-## 📋 Checklist Sebelum Menjual Template Ini
+## 📋 Checklist Kesiapan Peluncuran Kedai Toko (Untuk Pembeli)
 
-Sebelum menyerahkan template ini kepada pembeli, pastikan Anda telah memeriksa poin-poin berikut:
-- [ ] Semua file media telah terdownload lengkap di subfolder `assets/images/`
-- [ ] File `js/config.js` telah diisi dengan default data toko yang valid
-- [ ] Cek tautan WhatsApp Checkout, pastikan tidak ada karakter aneh dan nomor tujuan sudah menggunakan awalan `62`
-- [ ] Buka konsol browser (F12) untuk memastikan **nol error/warning**
-- [ ] Uji responsivitas layout pada resolusi Mobile, Tablet, dan Desktop
+Setelah Anda selesai melakukan kustomisasi, ikuti checklist di bawah ini untuk memastikan toko digital Anda siap meluncur secara sempurna di browser pelanggan:
+
+- [ ] **Aset Media Lengkap:** Seluruh file video `.webm` dan foto pendukung telah terunduh dengan lengkap di bawah subfolder `assets/images/` (gunakan script otomatis di folder `docs/`).
+- [ ] **Data Konfigurasi Toko:** File `js/config.js` telah diubah dengan nama kedai, alamat asli, serta deskripsi unik bisnis Anda sendiri.
+- [ ] **Nomor WhatsApp Checkout:** Nomor WhatsApp di `js/config.js` sudah aktif, menggunakan format internasional (misal: `6282244019596` tanpa spasi atau tanda `+`), dan sukses menerima detail pesanan saat tombol *Checkout* ditekan.
+- [ ] **Peta Lokasi Kedai:** Koordinat lintang (`lat`) dan bujur (`lng`) serta tautan tombol Google Maps di `js/config.js` telah disesuaikan dengan posisi kedai fisik Anda.
+- [ ] **Tombol Kuliner Online:** Tautan tautan toko GrabFood / ShopeeFood Anda di konfigurasi telah terisi secara benar dan tombol melayangnya berfungsi dengan baik (jika Anda terdaftar).
+- [ ] **Tampilan & Responsivitas:** Website dimuat dengan lancar, bebas dari error di konsol browser (F12), dan tampilannya presisi secara estetik di layar handphone, tablet, maupun komputer.
 
 ---
 *Dibuat dengan 🤎 untuk membantu pengusaha kopi go-digital secara elegan.*
